@@ -135,3 +135,56 @@ img {
         width: 768px;
     }
 }
+
+/* max-width 480px */
+@media screen and (max-width: 480px) {
+
+    /* general */
+    .container {
+        width: 480px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* lessons */
+    .lessons .col {
+        width: 75%;
+    }
+
+    .lessons .col:nth-child(2) .card img {
+        margin-top: 4rem;
+    }
+
+
+    /* steps */
+    .steps .col {
+        width: 75%;
+    }
+
+
+    .steps .col:nth-child(2) .card img,
+    .steps .col:nth-child(3) .card img {
+        margin-top: 4rem;
+    }
+
+    /* why us */
+    .why-us .col-right,
+    .why-us .col-left {
+        width: 90%;
+    }
+
+    .why-us .col-left {
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+    }
+
+    .why-us h2 {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+}
